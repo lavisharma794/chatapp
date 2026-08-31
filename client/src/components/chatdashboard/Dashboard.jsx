@@ -687,9 +687,10 @@ function Dashboard() {
         // Don't call handleSelectUser here.
         // Backend will save and send receive-message.
         // Calling handleSelectUser again causes unnecessary API calls.
-
        
-        setMessage("");
+    //    const data= getUserChats(currentUser.id);
+    //      setChats(data);
+       setMessage("");
 
     };
 
