@@ -1,6 +1,7 @@
 export const loginUser = async (email, password) => {
     try {
-        const endpoint = "http://localhost:8080/api/login";
+       // const endpoint = "http://localhost:8080/api/login";
+       const endpoint="https://chatapp-2-ky12.onrender.com/api/login"
         const payload = {
             method: "POST",
             headers: {
@@ -30,7 +31,8 @@ export const loginUser = async (email, password) => {
 
 export const registerUser = async (name, email, password) => {
     try {
-        const endpoint = "http://localhost:8080/api/signupUser";
+        //const endpoint = "http://localhost:8080/api/signupUser";
+        const endpoint="https://chatapp-2-ky12.onrender.com/api/signupUser"
         const payload = {
             method: "POST",
             headers: {

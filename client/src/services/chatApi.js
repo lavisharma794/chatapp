@@ -5,9 +5,9 @@ export const createPrivateChat = async (
 
     try {
 
-        const endpoint =
-            "http://localhost:8080/api/chats/private";
+        //const endpoint ="http://localhost:8080/api/chats/private";
 
+ const endpoint="https://chatapp-2-ky12.onrender.com/api/chats/private"
 
         console.log("Endpoint:", endpoint);
 
@@ -121,8 +121,9 @@ export const getUserChats = async (
 
   try {
 
-    const endpoint =
-      `http://localhost:8080/api/chats/user/${userId}`;
+   // const endpoint = `http://localhost:8080/api/chats/user/${userId}`;
+     const endpoint = `https://chatapp-2-ky12.onrender.com/api/chats/user/${userId}`;
+    
 
     const response =
       await fetch(endpoint);
@@ -163,8 +164,8 @@ export const getChatMessages = async (
 
   try {
 
-    const endpoint =
-      `http://localhost:8080/api/chats/${chatId}/messages`;
+    //const endpoint =`http://localhost:8080/api/chats/${chatId}/messages`;
+    const endpoint=`https://chatapp-2-ky12.onrender.com/api/chats/${chatId}/messages`
 
     const response =
       await fetch(endpoint);

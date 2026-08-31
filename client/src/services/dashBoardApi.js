@@ -1,5 +1,6 @@
 export const getAlluser = async () => {
-    const endPoint = "http://localhost:8080/api/users";
+   // const endPoint = "http://localhost:8080/api/users";
+    const endPoint=`https://chatapp-2-ky12.onrender.com/api/users`;
     const token = localStorage.getItem("token");
     const payload = {
         method: "GET",
